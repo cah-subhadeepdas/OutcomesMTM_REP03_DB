@@ -1,0 +1,11 @@
+﻿CREATE ROLE [db_perfview]
+    AUTHORIZATION [dbo];
+
+
+GO
+ALTER ROLE [db_perfview] ADD MEMBER [FUSE\gLGP-SQLDDLDevsOCREPDB];
+
+
+GO
+ALTER ROLE [db_perfview] ADD MEMBER [FUSE\gLGP-SQLPerfViewOCREPDB];
+

@@ -1,0 +1,22 @@
+﻿CREATE TABLE [dbo].[ZZ_PDCRxDim_20180226] (
+    [PDCRXKey]   BIGINT   IDENTITY (1, 1) NOT NULL,
+    [PDCRXID]    BIGINT   NOT NULL,
+    [PDCruleID]  INT      NOT NULL,
+    [PatientID]  INT      NOT NULL,
+    [RXID]       BIGINT   NOT NULL,
+    [activeasof] DATETIME NOT NULL,
+    [activethru] DATETIME NULL,
+    [iscurrent]  BIT      NOT NULL,
+    CONSTRAINT [PK___PDCRxDim] PRIMARY KEY CLUSTERED ([PDCRXKey] ASC) WITH (FILLFACTOR = 80)
+);
+
+
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [UK_PDCRXDIM_activeasof]
+    ON [dbo].[ZZ_PDCRxDim_20180226]([PDCruleID] ASC, [PatientID] ASC, [RXID] ASC, [activeasof] ASC) WITH (FILLFACTOR = 80);
+
+
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [UK_PDCRXDIM_activethru]
+    ON [dbo].[ZZ_PDCRxDim_20180226]([PDCruleID] ASC, [PatientID] ASC, [RXID] ASC, [activethru] ASC) WITH (FILLFACTOR = 80);
+

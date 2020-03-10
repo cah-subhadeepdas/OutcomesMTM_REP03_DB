@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[patientDim_test] (
+    [patientKey]                BIGINT       IDENTITY (1, 1) NOT NULL,
+    [ClientName]                VARCHAR (50) NULL,
+    [OMTM_ID]                   INT          NOT NULL,
+    [Member ID]                 VARCHAR (50) NOT NULL,
+    [FirstName]                 VARCHAR (50) NULL,
+    [MiddleInitial]             VARCHAR (50) NULL,
+    [LastName]                  VARCHAR (50) NULL,
+    [DOB]                       DATETIME     NULL,
+    [HICN_MBI]                  VARCHAR (50) NULL,
+    [ContractNumber]            VARCHAR (50) NULL,
+    [MTMPEnrollmentStartDate]   DATETIME     NULL,
+    [MTMPTargetingDate]         DATETIME     NULL,
+    [OptOutDate]                DATETIME     NULL,
+    [OptOutDateDD]              DATETIME     NULL,
+    [OptOutReasonCode]          INT          NULL,
+    [OptOutReasonCodeDD]        INT          NULL,
+    [BeneficiaryMatchCheck]     VARCHAR (50) NULL,
+    [ValidationCheck]           VARCHAR (50) NULL,
+    [ActionRequiredOnCheck]     VARCHAR (50) NULL,
+    [BeneficiaryMatch_OMTM_IDs] VARCHAR (50) NULL,
+    [SelectMasterOMTM_ID]       VARCHAR (50) NULL,
+    [RemoveMember]              VARCHAR (50) NULL
+);
+

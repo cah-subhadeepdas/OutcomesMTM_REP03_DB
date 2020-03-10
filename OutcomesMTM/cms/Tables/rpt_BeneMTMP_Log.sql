@@ -1,0 +1,27 @@
+﻿CREATE TABLE [cms].[rpt_BeneMTMP_Log] (
+    [BeneMTMPLogID]          INT          IDENTITY (1, 1) NOT NULL,
+    [BatchID]                INT          NOT NULL,
+    [BeneficiaryID]          INT          NULL,
+    [BeneficiaryKey]         VARCHAR (50) NULL,
+    [ContractYear]           CHAR (4)     NULL,
+    [ClientID]               INT          NULL,
+    [HICN]                   VARCHAR (12) NULL,
+    [FirstName]              VARCHAR (30) NULL,
+    [MI]                     CHAR (1)     NULL,
+    [LastName]               VARCHAR (30) NULL,
+    [DOB]                    DATE         NULL,
+    [ContractNumber]         VARCHAR (5)  NULL,
+    [MTMPTargetingDate]      DATE         NULL,
+    [MTMPEnrollmentFromDate] DATE         NULL,
+    [MTMPEnrollmentThruDate] DATE         NULL,
+    [OptOutReasonCode]       CHAR (2)     NULL,
+    [Rank_Contract]          TINYINT      NULL,
+    [ActiveFromTT]           DATETIME     NULL,
+    [ActiveThruTT]           DATETIME     NULL,
+    [MTMPEnrollmentID]       INT          NULL,
+    [PolicyID]               INT          NULL,
+    [PatientID]              INT          NULL,
+    [OptOutDate]             DATE         NULL,
+    PRIMARY KEY CLUSTERED ([BeneMTMPLogID] ASC)
+);
+

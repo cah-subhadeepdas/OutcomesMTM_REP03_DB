@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[UHC_TipType] (
+    [TipTypeID] INT           IDENTITY (1, 1) NOT NULL,
+    [TipTypeNM] VARCHAR (100) NOT NULL,
+    PRIMARY KEY CLUSTERED ([TipTypeID] ASC) WITH (FILLFACTOR = 80)
+);
+

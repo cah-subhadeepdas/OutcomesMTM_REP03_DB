@@ -1,0 +1,19 @@
+﻿CREATE ROLE [db_showplan]
+    AUTHORIZATION [dbo];
+
+
+GO
+ALTER ROLE [db_showplan] ADD MEMBER [FUSE\gLGP-SQLDDLDevsOCREPDB];
+
+
+GO
+ALTER ROLE [db_showplan] ADD MEMBER [FUSE\gLGP-SQLReadWriteOCREPDB];
+
+
+GO
+ALTER ROLE [db_showplan] ADD MEMBER [FUSE\gLGP-SQLReadOnlyOCREPDB];
+
+
+GO
+ALTER ROLE [db_showplan] ADD MEMBER [FUSE\gLGP-SQLPerfViewOCREPDB];
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [CARDINALHEALTH\steve.anderson03]
+    AUTHORIZATION [dbo];
+

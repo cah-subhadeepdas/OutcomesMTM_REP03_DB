@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [cmsETL]
+    AUTHORIZATION [db_owner];
+

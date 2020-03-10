@@ -1,0 +1,26 @@
+﻿CREATE TABLE [staging].[HPP_OpportunitiesByCenter_WO_NPI] (
+    [NCPDP]                           VARCHAR (8000) NULL,
+    [RELATIONSHIP ID]                 VARCHAR (8000) NULL,
+    [RELATIONSHIP NAME]               VARCHAR (8000) NULL,
+    [PHARMACY NAME]                   VARCHAR (8000) NULL,
+    [PHARMACY TYPE]                   VARCHAR (8000) NULL,
+    [ADDRESS]                         VARCHAR (8000) NULL,
+    [CITY]                            VARCHAR (8000) NULL,
+    [STATE]                           VARCHAR (8000) NULL,
+    [ZIP CODE]                        VARCHAR (8000) NULL,
+    [PHONE]                           VARCHAR (8000) NULL,
+    [FAX]                             VARCHAR (8000) NULL,
+    [CONTRACTED]                      VARCHAR (8000) NULL,
+    [TRAINED RPHS]                    VARCHAR (8000) NULL,
+    [TOTALPATIENTS]                   VARCHAR (8000) NULL,
+    [TOTALPRIMARYPATIENTS]            VARCHAR (8000) NULL,
+    [TOTAL CMR OPPORTUNITIES]         VARCHAR (8000) NULL,
+    [TOTAL PRIMARY CMR OPPORTUNITIES] VARCHAR (8000) NULL,
+    [CMRS SCHEDULED]                  VARCHAR (8000) NULL,
+    [TIP OPPORTUNITIES]               VARCHAR (8000) NULL,
+    [PRIMARY TIP OPPORTUNITIES]       VARCHAR (8000) NULL,
+    [UNFINISHED CLAIMS]               VARCHAR (8000) NULL,
+    [REVIEW RESUBMIT]                 VARCHAR (8000) NULL,
+    [LoadDate]                        DATE           NULL
+);
+

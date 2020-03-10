@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [FUSE\gLGP-SQLSysAdminocrepdb]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+
